@@ -35,12 +35,12 @@ const Main = () => {
     <main className="main">
       {transcript ? (
         <div className="max-w-[600px] w-full h-[400px] mx-auto rounded shadow-lg p-8 pt-10">
-          <div className="text-2xl font-bold mb-10">Transcript</div>
+          <div className="text-2xl font-bold mb-10">Transcript Your Call</div>
           <textarea className="w-full text-left h-[255px] rounded border outline-none p-4 text-sm no-resize-textarea" value={transcript} readOnly />
       </div>
       ) : loading ? (
         <div className="max-w-[600px] w-full h-[400px] mx-auto rounded pt-10 text-center shadow-lg">
-          <div className="text-2xl font-bold mb-24">Analyzing your call</div>
+          <div className="text-2xl font-bold mb-24">Analyzing Your Call</div>
           <div className="flex justify-center"><Spinner /></div>
         </div>
       ) : null}
